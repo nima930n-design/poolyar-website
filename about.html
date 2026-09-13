@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درباره پولیار و سازنده | پولیار - مدیریت هزینه و درآمد</title>
+  <meta name="description" content="آشنایی با تاریخچه، اهداف، امکانات و سازنده اپلیکیشن پولیار (سید نیما موسوی جاوید)." />
+  <meta property="og:title" content="درباره پولیار و سازنده" />
+  <meta property="og:description" content="داستان شکل‌گیری، ویژگی‌ها و راه‌های ارتباطی با سید نیما موسوی جاوید." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-container": "#10b981",
+            "surface-container-high": "#1a2e29",
+            "on-primary-fixed": "#002113",
+            "on-background": "#d1e7e0",
+            "surface": "#031713",
+            "tertiary-container": "#37b78a",
+            "primary": "#4edea3",
+            "secondary-container": "#00bd85",
+            "primary-fixed-dim": "#4edea3",
+            "surface-container-highest": "#253934",
+            "outline-variant": "#3c4a42",
+            "on-primary-container": "#00422b",
+            "primary-fixed": "#6ffbbe",
+            "inverse-surface": "#d1e7e0",
+            "inverse-on-surface": "#20342f",
+            "tertiary-fixed": "#80f9c8",
+            "secondary": "#45dfa4",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "surface-bright": "#293d38",
+            "background": "#031713",
+            "surface-container-lowest": "#00110e",
+            "on-surface": "#d1e7e0",
+            "outline": "#86948a",
+            "surface-container-low": "#0b1f1b",
+            "surface-container": "#0f231f",
+            "on-surface-variant": "#bbcabf"
+          },
+          fontFamily: {
+            vazir: ['Vazirmatn', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-vazir text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-primary/10 shadow-[0_4px_24px_rgba(0,0,0,0.4)] transition-all">
+    <div class="h-20 max-w-[1360px] mx-auto px-4 lg:px-12 flex items-center justify-between gap-4">
+      <a class="flex items-center gap-3.5 group cursor-pointer" href="index.html">
+        <div class="relative w-11 h-11 rounded-xl p-1 bg-surface-container-high/90 border border-primary/30 shadow-[0_0_18px_rgba(16,185,129,0.3)] flex items-center justify-center shrink-0">
+          <img alt="لوگوی رسمی پولیار" class="w-full h-full object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1WoOBvCU3o-jOJ7-QQIaqBc_SMh7ixQsR6e0UySUhsZSG5KgmdnVPpB3QqBiVPwxnzWw0S2nNIpaTHqWTtBEKzIWsqty-FyWv4YeteYzk-1ybwOLOVh9p75iDpDavxApmfyUVtF3oRyUgRM_MsBcCn4H2DsBT1qhR0F1X5YXL8hv86GiC-316Nhjd7AG4aPSSE90u8FnM61x9JHxm5OfbVtMIZtPMPHc04hT4qmAkykM2RuHvSL33q141E" />
+        </div>
+        <div class="flex flex-col text-right">
+          <span class="text-xl text-white font-extrabold tracking-tight group-hover:text-primary transition-colors leading-tight">پولیار</span>
+          <span class="text-xs text-on-surface-variant font-medium leading-none mt-0.5">مدیریت هزینه و درآمد</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8">
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html">خانه</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="products.html">محصولات و امکانات</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html#showcase">نمای اپلیکیشن</a>
+        <a class="text-sm nav-link-active" href="about.html">درباره پولیار</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="contact.html">تماس و سفارش</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html#faq">سؤالات متداول</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-l from-primary-container to-secondary-container text-surface-container-lowest text-sm font-black shadow-[0_0_24px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95 transition-all duration-300" href="https://t.me/nima001n_bot" rel="noopener noreferrer" target="_blank">
+          <span>📥 دریافت رایگان پولیار</span>
+        </a>
+        <button aria-label="باز کردن منو" class="lg:hidden flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface border border-outline-variant/30" id="mobileMenuBtn" type="button">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hidden lg:hidden w-full bg-surface-container-high/95 backdrop-blur-2xl border-b border-primary/20 px-6 py-5 flex-col gap-4" id="mobileMenu">
+      <a class="py-2 text-on-surface-variant hover:text-white border-b border-surface-container-highest flex items-center justify-between" href="index.html">
+        <span>صفحه اصلی</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="py-2 text-on-surface-variant hover:text-white border-b border-surface-container-highest flex items-center justify-between" href="products.html">
+        <span>محصولات و امکانات</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="py-2 text-primary font-bold border-b border-surface-container-highest flex items-center justify-between" href="about.html">
+        <span>درباره پولیار</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="py-2 text-on-surface-variant hover:text-white border-b border-surface-container-highest flex items-center justify-between" href="contact.html">
+        <span>تماس و سفارش</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="mt-2 w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary-container text-surface-container-lowest font-bold text-center shadow-lg" href="https://t.me/nima001n_bot" rel="noopener noreferrer" target="_blank">
+        📥 دریافت رایگان پولیار
+      </a>
+    </div>
+  </header>
+
+  <main class="w-full pt-28 pb-24 bg-background min-h-screen">
+    <div class="max-w-[1360px] mx-auto px-4 lg:px-12 relative">
+      
+      <!-- Top Ambient Glow -->
+      <div class="absolute top-10 right-1/3 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[160px] pointer-events-none"></div>
+
+      <!-- ==================== HERO SECTION ABOUT ==================== -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+        <div class="lg:col-span-7 text-right">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-primary/30 text-primary text-xs font-semibold mb-4 shadow-[0_0_16px_rgba(16,185,129,0.2)]">
+            <span class="material-symbols-outlined text-base">info</span>
+            <span>درباره پلتفرم</span>
+          </div>
+          <h1 class="text-3xl lg:text-5xl font-black text-white mb-6 tracking-tight">
+            درباره پولیار
+          </h1>
+          <div class="space-y-5 text-base lg:text-lg text-on-surface-variant leading-loose mb-8">
+            <p>
+              پولیار یک اپلیکیشن فارسی برای مدیریت هزینه‌ها و درآمدهای روزمره است که با هدف ساده‌تر کردن ثبت و بررسی اطلاعات مالی شخصی طراحی شده است.
+            </p>
+            <p>
+              با پولیار می‌توانید هزینه‌ها و درآمدهای خود را ثبت کنید، آن‌ها را دسته‌بندی کنید، سوابق گذشته را مشاهده کنید و گزارش‌های روزانه، ماهانه و سالانه داشته باشید.
+            </p>
+            <p class="text-white font-medium">
+              پولیار تلاش می‌کند مدیریت مالی روزمره را بدون پیچیدگی و با یک رابط کاربری مدرن، سریع و فارسی در اختیار شما قرار دهد.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-6 pt-4 border-t border-outline-variant/30">
+            <div>
+              <div class="text-3xl text-primary font-extrabold tnum">۱۰۰٪</div>
+              <div class="text-xs text-on-surface-variant">رایگان و بدون تبلیغات</div>
+            </div>
+            <div class="w-px h-10 bg-outline-variant/40"></div>
+            <div>
+              <div class="text-3xl text-primary font-extrabold">آفلاین</div>
+              <div class="text-xs text-on-surface-variant">بدون نیاز به اینترنت</div>
+            </div>
+            <div class="w-px h-10 bg-outline-variant/40"></div>
+            <div>
+              <div class="text-3xl text-primary font-extrabold">امن و محلی</div>
+              <div class="text-xs text-on-surface-variant">ذخیره‌سازی درون دستگاه</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Showcase Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-surface-container-high/90 via-surface-container to-surface-container-lowest border border-primary/30 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6),0_0_40px_rgba(16,185,129,0.2)] flex flex-col items-center text-center max-w-sm w-full">
+            <div class="w-28 h-28 rounded-2xl p-1.5 bg-surface-container-highest border border-primary/40 shadow-[0_0_35px_rgba(16,185,129,0.4)] mb-6 flex items-center justify-center">
+              <img alt="لوگوی رسمی پولیار" class="w-full h-full rounded-xl object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WoOBvCU3o-jOJ7-QQIaqBc_SMh7ixQsR6e0UySUhsZSG5KgmdnVPpB3QqBiVPwxnzWw0S2nNIpaTHqWTtBEKzIWsqty-FyWv4YeteYzk-1ybwOLOVh9p75iDpDavxApmfyUVtF3oRyUgRM_MsBcCn4H2DsBT1qhR0F1X5YXL8hv86GiC-316Nhjd7AG4aPSSE90u8FnM61x9JHxm5OfbVtMIZtPMPHc04hT4qmAkykM2RuHvSL33q141E" />
+            </div>
+            <h2 class="text-2xl text-white font-extrabold mb-1">پولیار</h2>
+            <span class="text-sm text-primary font-bold mb-4">مدیریت هزینه و درآمد</span>
+            <p class="text-xs text-on-surface-variant mb-6 leading-relaxed">
+              طراحی و توسعه‌یافته با تمرکز بر سهولت استفاده، پایداری داده‌ها و آرامش خاطر کاربران فارسی‌زبان.
+            </p>
+            <div class="w-full py-2.5 rounded-xl bg-surface-container-high border border-outline-variant/30 text-on-surface text-xs font-semibold flex items-center justify-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              <span>نسخه رسمی اندروید • انتشار سراسری</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 6 CORE CAPABILITIES ==================== -->
+      <section class="mb-24">
+        <div class="text-right mb-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/15 text-primary text-xs font-bold mb-3">
+            <span class="material-symbols-outlined text-sm">stars</span>
+            <span>ویژگی‌های محوری</span>
+          </div>
+          <h2 class="text-2xl lg:text-4xl text-white font-extrabold mb-2">قابلیت‌های برجسته پولیار</h2>
+          <p class="text-sm text-on-surface-variant">مرور سریع بر امکانات کلیدی جهت پایش امور مالی شخصی</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 1: ثبت هزینه -->
+          <div class="p-6 rounded-2xl bg-surface-container-high/50 border border-primary/15 hover:border-primary/40 transition-all duration-300 flex flex-col text-right shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4 border border-primary/20">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg text-white font-bold mb-2">ثبت هزینه</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              ثبت سریع هزینه‌های روزمره با مبلغ، عنوان، دسته‌بندی، توضیحات و تاریخ.
+            </p>
+          </div>
+
+          <!-- 2: ثبت درآمد -->
+          <div class="p-6 rounded-2xl bg-surface-container-high/50 border border-primary/15 hover:border-primary/40 transition-all duration-300 flex flex-col text-right shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4 border border-primary/20">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg text-white font-bold mb-2">ثبت درآمد</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              ثبت مستقل درآمدها و مدیریت منظم اطلاعات درآمدی.
+            </p>
+          </div>
+
+          <!-- 3: گزارش‌ها -->
+          <div class="p-6 rounded-2xl bg-surface-container-high/50 border border-primary/15 hover:border-primary/40 transition-all duration-300 flex flex-col text-right shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4 border border-primary/20">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg text-white font-bold mb-2">گزارش‌ها</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              مشاهده گزارش‌های روزانه، ماهانه و سالانه برای بررسی بهتر اطلاعات مالی.
+            </p>
+          </div>
+
+          <!-- 4: جست‌وجوی سریع -->
+          <div class="p-6 rounded-2xl bg-surface-container-high/50 border border-primary/15 hover:border-primary/40 transition-all duration-300 flex flex-col text-right shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4 border border-primary/20">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg text-white font-bold mb-2">جست‌وجوی سریع</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              پیدا کردن سریع اطلاعات ثبت‌شده در سوابق.
+            </p>
+          </div>
+
+          <!-- 5: تاریخ شمسی -->
+          <div class="p-6 rounded-2xl bg-surface-container-high/50 border border-primary/15 hover:border-primary/40 transition-all duration-300 flex flex-col text-right shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4 border border-primary/20">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg text-white font-bold mb-2">تاریخ شمسی</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              ثبت و مدیریت اطلاعات با تاریخ شمسی.
+            </p>
+          </div>
+
+          <!-- 6: نگهداری سوابق -->
+          <div class="p-6 rounded-2xl bg-surface-container-high/50 border border-primary/15 hover:border-primary/40 transition-all duration-300 flex flex-col text-right shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-4 border border-primary/20">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg text-white font-bold mb-2">نگهداری سوابق</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              حفظ سوابق ثبت‌شده برای بررسی و استفاده در آینده.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== DEVELOPER PROFILE ==================== -->
+      <section class="p-8 lg:p-12 rounded-3xl bg-surface-container-high/70 border border-primary/30 backdrop-blur-xl shadow-2xl mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 text-right">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">
+              <span class="material-symbols-outlined text-sm">badge</span>
+              <span>توسعه‌دهنده پولیار</span>
+            </div>
+            <h2 class="text-2xl lg:text-3xl text-white font-bold mb-2">
+              اطلاعات سازنده
+            </h2>
+            <p class="text-xl text-primary font-bold mb-4">
+              ساخته شده توسط سید نیما موسوی جاوید
+            </p>
+            <p class="text-sm text-on-surface-variant leading-relaxed mb-6 max-w-xl">
+              این اپلیکیشن با هدف ارائه یک ابزار سبک، سریع و کاملاً رایگان برای تمام هموطنان فارسی‌زبان توسعه یافته است تا چالش سردرگمی در مدیریت درآمدهای ماهانه و ریزمخارج روزانه را برطرف نماید.
+            </p>
+
+            <!-- Interactive Copy Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <button type="button" class="copy-btn p-3 rounded-xl bg-surface-container-highest/80 hover:bg-surface-bright border border-outline-variant/30 text-right cursor-pointer transition-all" data-copy="@nima.001n">
+                <div class="text-[11px] text-on-surface-variant flex items-center justify-between">
+                  <span>اینستاگرام</span>
+                  <span class="material-symbols-outlined text-xs">content_copy</span>
+                </div>
+                <div class="text-sm font-bold text-white dir-ltr">@nima.001n</div>
+              </button>
+
+              <button type="button" class="copy-btn p-3 rounded-xl bg-surface-container-highest/80 hover:bg-surface-bright border border-outline-variant/30 text-right cursor-pointer transition-all" data-copy="@nima_001">
+                <div class="text-[11px] text-on-surface-variant flex items-center justify-between">
+                  <span>تلگرام</span>
+                  <span class="material-symbols-outlined text-xs">content_copy</span>
+                </div>
+                <div class="text-sm font-bold text-white dir-ltr">@nima_001</div>
+              </button>
+
+              <button type="button" class="copy-btn p-3 rounded-xl bg-surface-container-highest/80 hover:bg-surface-bright border border-outline-variant/30 text-right cursor-pointer transition-all" data-copy="09302648679">
+                <div class="text-[11px] text-on-surface-variant flex items-center justify-between">
+                  <span>شماره تماس</span>
+                  <span class="material-symbols-outlined text-xs">content_copy</span>
+                </div>
+                <div class="text-sm font-bold text-white dir-ltr tnum">09302648679</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col gap-3">
+            <a class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-[#2AABEE]/15 border border-[#2AABEE]/30 text-white hover:bg-[#2AABEE]/30 transition-all text-sm font-bold" href="https://t.me/nima_001" target="_blank" rel="noopener noreferrer">
+              <svg class="w-5 h-5 text-[#2AABEE]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.895-.882 4.908-1.246 6.848-.154.821-.456 1.096-.748 1.122-.635.058-1.118-.42-1.733-.823-.963-.63-1.507-1.023-2.441-1.638-1.079-.711-.38-1.102.236-1.742.161-.168 2.959-2.712 3.013-2.943.007-.029.013-.137-.052-.194-.064-.058-.16-.038-.228-.023-.098.023-1.657 1.054-4.678 3.093-.442.304-.843.453-1.201.445-.395-.008-1.156-.223-1.722-.407-.694-.225-1.246-.345-1.198-.729.025-.2.303-.404.834-.614 3.264-1.422 5.442-2.36 6.534-2.815 3.109-1.294 3.755-1.519 4.177-1.527.093-.002.3.021.434.13.113.092.145.217.159.305.015.088.02.285.006.442z"></path>
+              </svg>
+              <span>چت مستقیم در تلگرام با نیما موسوی</span>
+            </a>
+
+            <a class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-[#E1306C]/15 border border-[#E1306C]/30 text-white hover:bg-[#E1306C]/30 transition-all text-sm font-bold" href="https://www.instagram.com/nima.001n/" target="_blank" rel="noopener noreferrer">
+              <svg class="w-5 h-5 text-[#E1306C]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+              </svg>
+              <span>مشاهده صفحه اینستاگرام @nima.001n</span>
+            </a>
+
+            <a class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-primary-container text-surface-container-lowest font-black text-sm shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:bg-primary transition-all" href="https://t.me/nima001n_bot" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-lg">download</span>
+              <span>ورود به ربات رسمی و دانلود اپلیکیشن</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PRIVACY CHARTER ==================== -->
+      <section class="max-w-3xl mx-auto rounded-3xl bg-surface-container-low/80 border border-outline-variant/30 p-8 sm:p-10 shadow-xl flex flex-col sm:flex-row items-center gap-6 text-right">
+        <div class="w-16 h-16 rounded-2xl bg-primary/20 text-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-3xl">privacy_tip</span>
+        </div>
+        <div>
+          <h3 class="text-xl text-white font-bold mb-2">تعهد به حریم خصوصی محلی</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            هیچ یک از تراکنش‌ها، مبالغ، عناوین هزینه‌ها و اطلاعات مالی شما در سرورهای خارجی ذخیره نمی‌شوند و کلیه پایگاه داده‌ها منحصراً در فایل‌های دیتابیس امن تلفن همراه شما قرار می‌گیرند.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-surface-container-lowest pt-14 pb-8 text-on-surface-variant border-t border-primary/20">
+    <div class="max-w-[1360px] mx-auto px-4 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10">
+        <div class="lg:col-span-5 flex flex-col items-start gap-3">
+          <div class="flex items-center gap-3.5">
+            <div class="relative w-11 h-11 rounded-xl p-1 bg-surface-container-high border border-primary/30 shadow-[0_0_20px_rgba(16,185,129,0.3)] flex items-center justify-center shrink-0">
+              <img alt="لوگوی رسمی پولیار" class="w-full h-full object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1WoOBvCU3o-jOJ7-QQIaqBc_SMh7ixQsR6e0UySUhsZSG5KgmdnVPpB3QqBiVPwxnzWw0S2nNIpaTHqWTtBEKzIWsqty-FyWv4YeteYzk-1ybwOLOVh9p75iDpDavxApmfyUVtF3oRyUgRM_MsBcCn4H2DsBT1qhR0F1X5YXL8hv86GiC-316Nhjd7AG4aPSSE90u8FnM61x9JHxm5OfbVtMIZtPMPHc04hT4qmAkykM2RuHvSL33q141E" />
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-xl text-primary font-bold leading-tight">پولیار</span>
+              <span class="text-xs text-on-surface-variant font-medium">مدیریت هزینه و درآمد</span>
+            </div>
+          </div>
+          <p class="text-sm text-on-surface-variant max-w-md leading-relaxed mt-2">
+            پلتفرم هوشمند مدیریت مالی شخصی و برنامه‌ریزی جریان وجوه نقد؛ بدون نیاز به ثبت‌نام و با پشتیبانی کامل از تاریخ شمسی.
+          </p>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-3">
+          <span class="text-sm text-on-surface font-bold">دسترسی سریع</span>
+          <nav class="flex flex-col gap-2">
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html">صفحه اصلی (خانه)</a>
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="products.html">محصولات و امکانات</a>
+            <a class="text-sm text-primary font-semibold transition-colors" href="about.html">درباره پولیار</a>
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="contact.html">تماس و سفارش</a>
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html#faq">سؤالات متداول</a>
+          </nav>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col gap-3">
+          <span class="text-sm text-on-surface font-bold">دانلود مستقیم</span>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            برای دریافت فایل نصبی نسخه جدید پولیار مستقیماً به ربات تلگرام متصل شوید:
+          </p>
+          <a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-surface-container-lowest font-bold hover:bg-primary transition-all text-xs mt-1" href="https://t.me/nima001n_bot" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-lg">download</span>
+            <span>ورود به ربات @nima001n_bot</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-right">
+        <span class="text-xs text-primary font-semibold">ساخته شده توسط سید نیما موسوی جاوید</span>
+        <span class="text-xs text-on-surface-variant">© تمامی حقوق برای اپلیکیشن پولیار محفوظ است.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

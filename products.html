@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" dir="rtl" lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محصولات و نسخه‌ها | پولیار - مدیریت هزینه و درآمد</title>
+  <meta name="description" content="آشنایی با نسخه‌ها، امکانات و دریافت مستقیم اپلیکیشن پولیار، ربات تلگرام و سفارش نسخه‌های سفارشی." />
+  <meta property="og:title" content="محصولات و امکانات پولیار" />
+  <meta property="og:description" content="نسخه‌های رایگان و پیشرفته پولیار، شبیه‌ساز مالی زنده و سفارش در تلگرام." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-container": "#10b981",
+            "surface-container-high": "#1a2e29",
+            "on-primary-fixed": "#002113",
+            "on-background": "#d1e7e0",
+            "surface": "#031713",
+            "tertiary-container": "#37b78a",
+            "primary": "#4edea3",
+            "secondary-container": "#00bd85",
+            "primary-fixed-dim": "#4edea3",
+            "surface-container-highest": "#253934",
+            "outline-variant": "#3c4a42",
+            "on-primary-container": "#00422b",
+            "primary-fixed": "#6ffbbe",
+            "inverse-surface": "#d1e7e0",
+            "inverse-on-surface": "#20342f",
+            "tertiary-fixed": "#80f9c8",
+            "secondary": "#45dfa4",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "surface-bright": "#293d38",
+            "background": "#031713",
+            "surface-container-lowest": "#00110e",
+            "on-surface": "#d1e7e0",
+            "outline": "#86948a",
+            "surface-container-low": "#0b1f1b",
+            "surface-container": "#0f231f",
+            "on-surface-variant": "#bbcabf"
+          },
+          fontFamily: {
+            vazir: ['Vazirmatn', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-vazir text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-primary/10 shadow-[0_4px_24px_rgba(0,0,0,0.4)] transition-all">
+    <div class="h-20 max-w-[1360px] mx-auto px-4 lg:px-12 flex items-center justify-between gap-4">
+      <a class="flex items-center gap-3.5 group cursor-pointer" href="index.html">
+        <div class="relative w-11 h-11 rounded-xl p-1 bg-surface-container-high/90 border border-primary/30 shadow-[0_0_18px_rgba(16,185,129,0.3)] flex items-center justify-center shrink-0">
+          <img alt="لوگوی رسمی پولیار" class="w-full h-full object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1WoOBvCU3o-jOJ7-QQIaqBc_SMh7ixQsR6e0UySUhsZSG5KgmdnVPpB3QqBiVPwxnzWw0S2nNIpaTHqWTtBEKzIWsqty-FyWv4YeteYzk-1ybwOLOVh9p75iDpDavxApmfyUVtF3oRyUgRM_MsBcCn4H2DsBT1qhR0F1X5YXL8hv86GiC-316Nhjd7AG4aPSSE90u8FnM61x9JHxm5OfbVtMIZtPMPHc04hT4qmAkykM2RuHvSL33q141E" />
+        </div>
+        <div class="flex flex-col text-right">
+          <span class="text-xl text-white font-extrabold tracking-tight group-hover:text-primary transition-colors leading-tight">پولیار</span>
+          <span class="text-xs text-on-surface-variant font-medium leading-none mt-0.5">مدیریت هزینه و درآمد</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html">خانه</a>
+        <a class="text-sm nav-link-active" href="products.html">محصولات و امکانات</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html#showcase">نمای اپلیکیشن</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="about.html">درباره پولیار</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="contact.html">تماس و سفارش</a>
+        <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html#faq">سؤالات متداول</a>
+      </nav>
+
+      <!-- CTA & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-l from-primary-container to-secondary-container text-surface-container-lowest text-sm font-black shadow-[0_0_24px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95 transition-all duration-300" href="https://t.me/nima001n_bot" rel="noopener noreferrer" target="_blank">
+          <span>📥 دریافت رایگان پولیار</span>
+        </a>
+        <button aria-label="باز کردن منو" class="lg:hidden flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface border border-outline-variant/30" id="mobileMenuBtn" type="button">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="hidden lg:hidden w-full bg-surface-container-high/95 backdrop-blur-2xl border-b border-primary/20 px-6 py-5 flex-col gap-4" id="mobileMenu">
+      <a class="py-2 text-on-surface-variant hover:text-white border-b border-surface-container-highest flex items-center justify-between" href="index.html">
+        <span>صفحه اصلی</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="py-2 text-primary font-bold border-b border-surface-container-highest flex items-center justify-between" href="products.html">
+        <span>محصولات و امکانات</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="py-2 text-on-surface-variant hover:text-white border-b border-surface-container-highest flex items-center justify-between" href="about.html">
+        <span>درباره پولیار</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="py-2 text-on-surface-variant hover:text-white border-b border-surface-container-highest flex items-center justify-between" href="contact.html">
+        <span>تماس و سفارش</span>
+        <span class="material-symbols-outlined text-sm">arrow_back</span>
+      </a>
+      <a class="mt-2 w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary-container text-surface-container-lowest font-bold text-center shadow-lg" href="https://t.me/nima001n_bot" rel="noopener noreferrer" target="_blank">
+        📥 دریافت رایگان پولیار
+      </a>
+    </div>
+  </header>
+
+  <main class="w-full pt-28 pb-24 bg-background min-h-screen">
+    <!-- Ambient Radial Glows -->
+    <div class="max-w-[1360px] mx-auto px-4 lg:px-12 relative">
+      <div class="absolute -top-10 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <!-- Hero Header -->
+      <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-primary/20 text-primary text-xs font-semibold mb-4">
+          <span class="material-symbols-outlined text-base">inventory_2</span>
+          <span>نسخه‌ها و خدمات اختصاصی</span>
+        </div>
+        <h1 class="text-3xl lg:text-5xl font-black text-white mb-4">
+          محصولات و راهکارهای پولیار
+        </h1>
+        <p class="text-base lg:text-lg text-on-surface-variant leading-relaxed">
+          از اپلیکیشن رایگان اندروید تا ربات تلگرام و سفارش نسخه‌های سفارشی برای کسب‌وکارها، همه ابزارها در دسترس شماست.
+        </p>
+      </div>
+
+      <!-- ==================== 3 PRODUCT TIERS ==================== -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24 items-stretch">
+        
+        <!-- Tier 1: Free Android App -->
+        <div class="p-8 rounded-3xl bg-surface-container-low/80 border border-primary/30 backdrop-blur-xl shadow-xl flex flex-col justify-between relative overflow-hidden group hover:border-primary/60 transition-all duration-300">
+          <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-primary to-primary-container"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-primary-container/20 text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">android</span>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold">۱۰۰٪ رایگان</span>
+            </div>
+            <h3 class="text-2xl text-white font-extrabold mb-2">اپلیکیشن اندروید پولیار</h3>
+            <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">
+              نسخه اصلی با فایل نصبی (APK)، بدون نیاز به اتصال دائم اینترنت و بدون نیاز به ورود یا ثبت اطلاعات هویتی.
+            </p>
+
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                <span>ثبت نامحدود هزینه و درآمد</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                <span>پشتیبانی کامل از تاریخ شمسی</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                <span>گزارش‌های روزانه، ماهانه و سالانه</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                <span>ذخیره‌سازی ایمن در حافظه داخلی</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                <span>بدون هیچ‌گونه تبلیغات مزاحم</span>
+              </li>
+            </ul>
+          </div>
+
+          <a class="w-full inline-flex items-center justify-center gap-2 py-4 rounded-xl bg-gradient-to-l from-primary-container to-secondary-container text-surface-container-lowest font-black text-sm shadow-[0_0_25px_rgba(16,185,129,0.35)] hover:shadow-[0_0_35px_rgba(16,185,129,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all" href="https://t.me/nima001n_bot" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-xl">download</span>
+            <span>دانلود رایگان از ربات تلگرام</span>
+          </a>
+        </div>
+
+        <!-- Tier 2: Official Telegram Bot -->
+        <div class="p-8 rounded-3xl bg-surface-container-high/80 border border-primary/40 backdrop-blur-xl shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-primary/70 transition-all duration-300">
+          <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-[#2AABEE] to-primary"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-[#2AABEE]/20 text-[#2AABEE] flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">smart_toy</span>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-[#2AABEE]/20 text-[#2AABEE] text-xs font-bold">همیشه در دسترس</span>
+            </div>
+            <h3 class="text-2xl text-white font-extrabold mb-2">ربات هوشمند تلگرام</h3>
+            <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">
+              مدیریت و ثبت فوری هزینه‌ها مستقیماً در پیام‌رسان تلگرام، بدون نیاز به نصب هرگونه فایل بر روی گوشی.
+            </p>
+
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#2AABEE] text-lg">check_circle</span>
+                <span>دریافت فوری فایل نصبی APK</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#2AABEE] text-lg">check_circle</span>
+                <span>ثبت سریع مخارج با دستورات ساده متنی</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#2AABEE] text-lg">check_circle</span>
+                <span>استعلام مانده حساب و تراز ماهانه</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#2AABEE] text-lg">check_circle</span>
+                <span>ارسال مستقیم پیشنهادات به توسعه‌دهنده</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#2AABEE] text-lg">check_circle</span>
+                <span>آیدی ربات: @nima001n_bot</span>
+              </li>
+            </ul>
+          </div>
+
+          <a class="w-full inline-flex items-center justify-center gap-2 py-4 rounded-xl bg-surface-container-highest border border-primary/30 text-primary font-bold text-sm hover:bg-primary hover:text-surface-container-lowest transition-all" href="https://t.me/nima001n_bot" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-xl">send</span>
+            <span>ورود به ربات @nima001n_bot</span>
+          </a>
+        </div>
+
+        <!-- Tier 3: Custom Development & Business Packages -->
+        <div class="p-8 rounded-3xl bg-surface-container-low/80 border border-primary/20 backdrop-blur-xl shadow-xl flex flex-col justify-between relative overflow-hidden group hover:border-primary/50 transition-all duration-300">
+          <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-secondary to-tertiary-container"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-tertiary-container/20 text-tertiary-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">extension</span>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary-container text-xs font-bold">سفارشی و شرکتی</span>
+            </div>
+            <h3 class="text-2xl text-white font-extrabold mb-2">توسعه اختصاصی و بسته‌ها</h3>
+            <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">
+              سفارش قابلیت‌های اختصاصی، گزارش‌های ویژه اکسل، حسابداری چندفروشگاهی یا توسعه ویژگی مدنظر شما.
+            </p>
+
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-tertiary-container text-lg">check_circle</span>
+                <span>خروجی پیشرفته فایل اکسل (Excel/CSV)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-tertiary-container text-lg">check_circle</span>
+                <span>سفارشی‌سازی برای صندوق فروشگاه‌ها و تیم‌ها</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-tertiary-container text-lg">check_circle</span>
+                <span>افزودن دسته‌بندی‌ها و فیلدهای اختصاصی</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-tertiary-container text-lg">check_circle</span>
+                <span>پشتیبانی و ارتباط مستقیم با نیما موسوی</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-tertiary-container text-lg">check_circle</span>
+                <span>مشاوره و قیمت‌گذاری منصفانه</span>
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="btn-quick-order w-full inline-flex items-center justify-center gap-2 py-4 rounded-xl bg-surface-container-high border border-outline-variant/30 text-white font-bold text-sm hover:border-primary hover:text-primary transition-all cursor-pointer" data-package="توسعه اختصاصی و بسته‌های شرکتی">
+            <span class="material-symbols-outlined text-xl">chat</span>
+            <span>ثبت سفارش در تلگرام</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ==================== LIVE INTERACTIVE FINANCIAL SIMULATOR ==================== -->
+      <section class="relative w-full py-16 bg-surface-container-low/60 rounded-3xl border border-primary/20 p-8 lg:p-12 mb-24 shadow-2xl overflow-hidden">
+        <div class="absolute -top-10 -right-10 w-72 h-72 bg-primary/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold mb-3">
+              <span class="material-symbols-outlined text-sm">play_circle</span>
+              <span>شبیه‌ساز تعاملی پولیار</span>
+            </div>
+            <h2 class="text-2xl lg:text-4xl text-white font-black mb-2">
+              تجربه زنده پولیار در مرورگر شما
+            </h2>
+            <p class="text-sm text-on-surface-variant max-w-xl leading-relaxed">
+              می‌توانید همین حالا مبلغ و عنوان یک هزینه یا درآمد را وارد کنید تا سرعت محاسبات و انضباط بصری پولیار را لمس نمایید.
+            </p>
+          </div>
+          <button id="simReset" type="button" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high border border-outline-variant/30 text-on-surface-variant hover:text-white hover:border-primary/40 text-xs font-semibold transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-sm">restart_alt</span>
+            <span>بازنشانی مقادیر</span>
+          </button>
+        </div>
+
+        <!-- Simulator Live Board -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Input Form Box -->
+          <div class="lg:col-span-5 p-6 rounded-2xl bg-surface-container-high/70 border border-primary/20 flex flex-col justify-between">
+            <h3 class="text-lg text-white font-bold mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+              <span>افزودن تراکنش تستی</span>
+            </h3>
+
+            <div class="space-y-4">
+              <div>
+                <label for="simTitle" class="block text-xs text-on-surface-variant mb-1 font-medium">عنوان تراکنش</label>
+                <input id="simTitle" type="text" placeholder="مثال: خرید خواربار، پاداش، بنزین..." class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 focus:border-primary text-white text-sm focus:outline-none transition-colors" />
+              </div>
+
+              <div>
+                <label for="simAmount" class="block text-xs text-on-surface-variant mb-1 font-medium">مبلغ (تومان)</label>
+                <input id="simAmount" type="number" placeholder="مثال: 450000" class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 focus:border-primary text-white text-sm focus:outline-none transition-colors dir-ltr text-right" />
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 pt-2">
+                <button id="simAddExpense" type="button" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-error/20 border border-error/40 text-error hover:bg-error hover:text-white font-bold text-sm transition-all cursor-pointer">
+                  <span class="material-symbols-outlined text-base">arrow_upward</span>
+                  <span>ثبت به عنوان هزینه</span>
+                </button>
+                <button id="simAddIncome" type="button" class="inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-primary-container/20 border border-primary/40 text-primary hover:bg-primary-container hover:text-surface-container-lowest font-bold text-sm transition-all cursor-pointer">
+                  <span class="material-symbols-outlined text-base">arrow_downward</span>
+                  <span>ثبت به عنوان درآمد</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-outline-variant/20 text-xs text-on-surface-variant flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-base">lock</span>
+              <span>تمام این محاسبات در حافظه محلی مرورگر شما انجام می‌شود.</span>
+            </div>
+          </div>
+
+          <!-- Live Balance Output & Feed -->
+          <div class="lg:col-span-7 flex flex-col gap-4">
+            <!-- Balance cards row -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="p-4 rounded-2xl bg-surface-container-high/60 border border-primary/20">
+                <div class="text-[11px] text-on-surface-variant mb-1">مانده خالص در دسترس</div>
+                <div class="text-xl text-white font-black tnum"><span id="simBalance">۱۸,۴۵۰,۰۰۰</span> <span class="text-xs text-primary font-normal">تومان</span></div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-surface-container-high/60 border border-primary/20">
+                <div class="text-[11px] text-primary mb-1">کل دریافتی (درآمد)</div>
+                <div id="simIncome" class="text-lg text-primary font-bold tnum">+ ۳۲,۰۰۰,۰۰۰</div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-surface-container-high/60 border border-error/20">
+                <div class="text-[11px] text-error mb-1">کل پرداختی (هزینه)</div>
+                <div id="simExpense" class="text-lg text-error font-bold tnum">- ۱۳,۵۵۰,۰۰۰</div>
+              </div>
+            </div>
+
+            <!-- Feed of Transactions -->
+            <div class="p-4 rounded-2xl bg-surface-container-high/40 border border-outline-variant/20 flex-1 flex flex-col">
+              <div class="text-xs text-on-surface-variant font-bold mb-3 flex items-center justify-between">
+                <span>جریان تراکنش‌های شبیه‌ساز</span>
+                <span class="text-[10px] text-primary">به‌روزرسانی خودکار</span>
+              </div>
+              
+              <div id="simTxList" class="space-y-2 max-h-[220px] overflow-y-auto pr-1">
+                <div class="p-3 rounded-xl bg-surface-container-high/60 border border-primary/20 flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center material-symbols-outlined text-sm">payments</span>
+                    <div>
+                      <div class="text-sm font-bold text-white">واریز حقوق ماهانه</div>
+                      <div class="text-xs text-on-surface-variant">۱ آذر • حقوق</div>
+                    </div>
+                  </div>
+                  <div class="text-primary font-bold text-sm dir-ltr tnum">+ ۱۸,۰۰۰,۰۰۰ <span class="text-xs">تومان</span></div>
+                </div>
+
+                <div class="p-3 rounded-xl bg-surface-container-high/60 border border-error/20 flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-error-container/30 text-error flex items-center justify-center material-symbols-outlined text-sm">shopping_cart</span>
+                    <div>
+                      <div class="text-sm font-bold text-white">خرید هفتگی مواد غذایی</div>
+                      <div class="text-xs text-on-surface-variant">۲ آذر • خوراک</div>
+                    </div>
+                  </div>
+                  <div class="text-error font-bold text-sm dir-ltr tnum">- ۱,۲۵۰,۰۰۰ <span class="text-xs">تومان</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== FEATURE COMPARISON TABLE ==================== -->
+      <section class="relative w-full mb-24">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-2xl lg:text-4xl text-white font-extrabold mb-3">
+            جدول مقایسه نسخه‌های پولیار
+          </h2>
+          <p class="text-sm text-on-surface-variant">
+            بررسی جامع قابلیت‌ها برای انتخاب بهینه‌ترین ابزار متناسب با نیاز مالی شما.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto rounded-3xl border border-primary/20 shadow-xl bg-surface-container-low/60 backdrop-blur-md">
+          <table class="w-full text-right text-sm">
+            <thead class="bg-surface-container-high text-white text-xs uppercase border-b border-primary/20">
+              <tr>
+                <th class="p-5">امکانات و قابلیت‌ها</th>
+                <th class="p-5 text-center text-primary font-bold">اپلیکیشن اندروید (رایگان)</th>
+                <th class="p-5 text-center text-[#2AABEE] font-bold">ربات تلگرام (@nima001n_bot)</th>
+                <th class="p-5 text-center text-tertiary font-bold">نسخه سفارشی و شرکتی</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-outline-variant/20 text-on-surface">
+              <tr class="hover:bg-surface-container-high/40 transition-colors">
+                <td class="p-5 font-semibold text-white">هزینه استفاده</td>
+                <td class="p-5 text-center text-primary font-bold">۱۰۰٪ رایگان</td>
+                <td class="p-5 text-center text-[#2AABEE] font-bold">۱۰۰٪ رایگان</td>
+                <td class="p-5 text-center">طبق توافق و نوع سفارشی‌سازی</td>
+              </tr>
+              <tr class="hover:bg-surface-container-high/40 transition-colors">
+                <td class="p-5 font-semibold text-white">کارکرد آفلاین بدون اینترنت</td>
+                <td class="p-5 text-center text-primary font-bold">✓ دارد (کامل)</td>
+                <td class="p-5 text-center text-on-surface-variant">نیاز به اینترنت تلگرام</td>
+                <td class="p-5 text-center text-primary font-bold">✓ دارد</td>
+              </tr>
+              <tr class="hover:bg-surface-container-high/40 transition-colors">
+                <td class="p-5 font-semibold text-white">تاریخ هجری شمسی</td>
+                <td class="p-5 text-center text-primary font-bold">✓ دارد</td>
+                <td class="p-5 text-center text-[#2AABEE] font-bold">✓ دارد</td>
+                <td class="p-5 text-center text-primary font-bold">✓ دارد</td>
+              </tr>
+              <tr class="hover:bg-surface-container-high/40 transition-colors">
+                <td class="p-5 font-semibold text-white">نمودارها و گزارش‌های بصری</td>
+                <td class="p-5 text-center text-primary font-bold">✓ دارد</td>
+                <td class="p-5 text-center text-on-surface-variant">گزارش متنی / خلاصه</td>
+                <td class="p-5 text-center text-primary font-bold">✓ نمودارهای اختصاصی</td>
+              </tr>
+              <tr class="hover:bg-surface-container-high/40 transition-colors">
+                <td class="p-5 font-semibold text-white">نیاز به ثبت‌نام و اطلاعات شخصی</td>
+                <td class="p-5 text-center text-primary font-bold">خیر (کاملاً ناشناس)</td>
+                <td class="p-5 text-center text-[#2AABEE] font-bold">خیر (فقط تلگرام)</td>
+                <td class="p-5 text-center">خیر</td>
+              </tr>
+              <tr class="hover:bg-surface-container-high/40 transition-colors">
+                <td class="p-5 font-semibold text-white">خروجی اکسل و پشتیبان‌گیری پیشرفته</td>
+                <td class="p-5 text-center text-on-surface-variant">سوابق محلی</td>
+                <td class="p-5 text-center text-on-surface-variant">سوابق ابری در بات</td>
+                <td class="p-5 text-center text-primary font-bold">✓ فایل اکسل و دیتابیس</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ==================== TELEGRAM ORDER FORM MODAL/CARD ==================== -->
+      <section class="relative w-full p-8 lg:p-12 rounded-3xl bg-gradient-to-br from-[#06241c] via-surface-container-high to-surface-container border border-primary/30 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 text-right">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container text-surface-container-lowest text-xs font-bold mb-3">
+              <span class="material-symbols-outlined text-sm">send</span>
+              <span>سفارش فوری تلگرامی</span>
+            </div>
+            <h2 class="text-2xl lg:text-4xl text-white font-black mb-4">
+              ثبت درخواست یا سفارش برنامه
+            </h2>
+            <p class="text-sm text-on-surface leading-relaxed mb-6">
+              فرم زیر را پر کنید تا متن درخواست شما بلافاصله قالب‌بندی شده و مستقیماً برای توسعه‌دهنده در تلگرام ارسال گردد.
+            </p>
+            <div class="space-y-3 text-xs text-on-surface-variant">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-base">verified</span>
+                <span>پاسخگویی سریع در کمتر از ۲ ساعت</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-base">support_agent</span>
+                <span>ارتباط مستقیم با سید نیما موسوی جاوید</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form id="telegramOrderForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="orderName" class="block text-xs text-on-surface-variant mb-1 font-medium">نام و نام خانوادگی</label>
+                <input id="orderName" type="text" required placeholder="نام شما" class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 focus:border-primary text-white text-sm focus:outline-none" />
+              </div>
+
+              <div>
+                <label for="orderPhone" class="block text-xs text-on-surface-variant mb-1 font-medium">شماره موبایل یا آیدی تلگرام</label>
+                <input id="orderPhone" type="text" required placeholder="09... یا @id" class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 focus:border-primary text-white text-sm focus:outline-none dir-ltr text-right" />
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="orderPackage" class="block text-xs text-on-surface-variant mb-1 font-medium">محصول یا درخواست مورد نظر</label>
+                <select id="orderPackage" class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 focus:border-primary text-white text-sm focus:outline-none">
+                  <option value="دریافت رایگان فایل APK پولیار">دریافت رایگان فایل APK پولیار</option>
+                  <option value="استفاده از ربات تلگرام پولیار">استفاده از ربات تلگرام پولیار</option>
+                  <option value="سفارش توسعه نسخه اختصاصی / شرکتی">سفارش توسعه نسخه اختصاصی / شرکتی</option>
+                  <option value="پیشنهاد امکانات جدید یا همکاری">پیشنهاد امکانات جدید یا همکاری</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="orderNote" class="block text-xs text-on-surface-variant mb-1 font-medium">توضیحات تکمیلی (اختیاری)</label>
+                <textarea id="orderNote" rows="3" placeholder="توضیحات یا نیازهای خاص شما..." class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 focus:border-primary text-white text-sm focus:outline-none"></textarea>
+              </div>
+
+              <div class="sm:col-span-2">
+                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-l from-primary-container via-primary to-secondary-container text-surface-container-lowest font-black text-base shadow-[0_0_25px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.65)] hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined text-xl">send</span>
+                  <span>ارسال سفارش و انتقال به تلگرام</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-full bg-surface-container-lowest pt-14 pb-8 text-on-surface-variant border-t border-primary/20">
+    <div class="max-w-[1360px] mx-auto px-4 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10">
+        <div class="lg:col-span-5 flex flex-col items-start gap-3">
+          <div class="flex items-center gap-3.5">
+            <div class="relative w-11 h-11 rounded-xl p-1 bg-surface-container-high border border-primary/30 shadow-[0_0_20px_rgba(16,185,129,0.3)] flex items-center justify-center shrink-0">
+              <img alt="لوگوی رسمی پولیار" class="w-full h-full object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1WoOBvCU3o-jOJ7-QQIaqBc_SMh7ixQsR6e0UySUhsZSG5KgmdnVPpB3QqBiVPwxnzWw0S2nNIpaTHqWTtBEKzIWsqty-FyWv4YeteYzk-1ybwOLOVh9p75iDpDavxApmfyUVtF3oRyUgRM_MsBcCn4H2DsBT1qhR0F1X5YXL8hv86GiC-316Nhjd7AG4aPSSE90u8FnM61x9JHxm5OfbVtMIZtPMPHc04hT4qmAkykM2RuHvSL33q141E" />
+            </div>
+            <div class="flex flex-col text-right">
+              <span class="text-xl text-primary font-bold leading-tight">پولیار</span>
+              <span class="text-xs text-on-surface-variant font-medium">مدیریت هزینه و درآمد</span>
+            </div>
+          </div>
+          <p class="text-sm text-on-surface-variant max-w-md leading-relaxed mt-2">
+            ثبت و مدیریت هوشمند جریان هزینه‌ها و درآمدها بر پایه فناوری امن و طراحی زیبای زمردی.
+          </p>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-3">
+          <span class="text-sm text-on-surface font-bold">دسترسی سریع</span>
+          <nav class="flex flex-col gap-2">
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html">صفحه اصلی (خانه)</a>
+            <a class="text-sm text-primary font-semibold transition-colors" href="products.html">محصولات و امکانات</a>
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="about.html">درباره پولیار</a>
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="contact.html">تماس و سفارش</a>
+            <a class="text-sm text-on-surface-variant hover:text-white transition-colors" href="index.html#faq">سؤالات متداول</a>
+          </nav>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col gap-3">
+          <span class="text-sm text-on-surface font-bold">دریافت برنامه</span>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            جهت دانلود رایگان فایل نصبی یا ثبت سریع دخل‌وخرج از ربات رسمی تلگرام استفاده کنید:
+          </p>
+          <a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-surface-container-lowest font-bold hover:bg-primary transition-all text-xs mt-1" href="https://t.me/nima001n_bot" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-lg">download</span>
+            <span>دانلود رایگان از ربات پولیار</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-right">
+        <span class="text-xs text-primary font-semibold">ساخته شده توسط سید نیما موسوی جاوید</span>
+        <span class="text-xs text-on-surface-variant">© تمامی حقوق برای اپلیکیشن پولیار محفوظ است.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
